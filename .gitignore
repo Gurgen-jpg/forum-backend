@@ -1,33 +1,7 @@
-# Node.js
+# Игнорировать папку с зависимостями Node.js
+.idea
 node_modules/
-
-# TypeScript
-#dist/
-*.tsbuildinfo
-
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Environment variables
+dist
+# Игнорировать файлы конфигурации npm
+package-lock.json
 .env
-.env.local
-.env.test
-.env.*.local
-
-# IDE and OS-specific files
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.swp
-
-# Optional npm cache directory
-.npm/
-
-# Build artifacts
-coverage/
-build/
