@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.testingRouter = void 0;
+const express_1 = require("express");
+const testingController_1 = require("./testingController");
+const testingService_1 = require("./testingService");
+const db_1 = require("../db/db");
+exports.testingRouter = (0, express_1.Router)();
+const database = db_1.DB.getInstance();
+const testingService = new testingService_1.TestingService(database);
+const testingController = new testingController_1.TestingController(testingService);
+exports.testingRouter.delete("/all-data", testingController.deleteAll.bind(testingController));

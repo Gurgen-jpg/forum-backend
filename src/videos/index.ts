@@ -1,0 +1,1 @@
+export { videoRouter } from "./videoRouter";
